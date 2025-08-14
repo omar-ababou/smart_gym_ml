@@ -42,16 +42,14 @@ The trained model is exported as `models/smartgym_model.tflite` for mobile integ
 ## Project Structure
 ```
 smart_gym_ml/
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── synthetic/
-├── models/
+├── .idea/
+├── config/
+├── mobile_models/
 ├── src/
 │   ├── data_processing/
 │   ├── ml_models/
+|   ├── models
 │   └── utils/
-├── notebooks/
-├── config/
-└── tests/
+├── README.md
+└── requirements.txt
 ```
