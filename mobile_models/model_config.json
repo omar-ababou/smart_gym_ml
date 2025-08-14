@@ -1,0 +1,47 @@
+{
+  "exercise_recognition": {
+    "input_shape": [
+      1,
+      600
+    ],
+    "output_shape": [
+      1,
+      6
+    ],
+    "exercises": [
+      "squats",
+      "pushups",
+      "jumping_jacks",
+      "lunges",
+      "planks",
+      "rest"
+    ],
+    "input_format": "6 sensors \u00d7 100 readings (accel_x, accel_y, accel_z, gyro_x, gyro_y, gyro_z)",
+    "sampling_rate": "50Hz recommended",
+    "window_size": "2-3 seconds"
+  },
+  "heart_rate_prediction": {
+    "input_features": [
+      "age",
+      "weight",
+      "height",
+      "fitness_level",
+      "exercise_intensity",
+      "movement_variability"
+    ],
+    "input_shape": [
+      1,
+      6
+    ],
+    "output_shape": [
+      1,
+      1
+    ],
+    "output_range": "60-200 BPM"
+  },
+  "anomaly_detection": {
+    "input_features": 44,
+    "output": "binary (0=normal, 1=anomaly)",
+    "threshold": 0.5
+  }
+}
